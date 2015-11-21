@@ -1,15 +1,16 @@
 import "./App.css";
 import React from "react";
-import ClassProperties  from "app/components/ClassProperties";
+import Time  from "app/components/Time";
 import DoExpression     from "app/components/DoExpression";
 import RestProperties   from "app/components/RestProperties";
 import SpreadProperties from "app/components/SpreadProperties";
 import User             from "app/components/User";
+import Decorators       from "app/components/Decorators";
 
 export default function () {
   return (
     <div className="app">
-      <ClassProperties
+      <Time
         date={ this.state.date }
       />
       <DoExpression
@@ -24,6 +25,7 @@ export default function () {
       />
       <SpreadProperties />
       <User username="MichalZalecki" />
+      <Decorators />
     </div>
   );
 };

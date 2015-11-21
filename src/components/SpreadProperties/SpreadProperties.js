@@ -7,11 +7,12 @@ class SpreadProperties extends React.Component {
     super(props);
 
     this.state = {
-      filter: "orange|purple|black",
+      filter: ["orange", "purple","black"],
       ...ColorsStore.getState(),
     };
 
-    this.onChange = this.onChange.bind(this);
+    this.onChange     = this.onChange.bind(this);
+    this._colorFilter = this._colorFilter.bind(this);
   }
 
   componentDidMount() {
@@ -28,10 +29,12 @@ class SpreadProperties extends React.Component {
 
   getListItems() {
     return this.state.colors
-      .filter(color => new RegExp(`^${this.state.filter}$`).test(color))
-      .map(color =>
-        <li key={ color } style={ { color } }>{ color }</li>
-      );
+      .filter(this._colorFilter)
+      .map(color => <li key={ color } style={ { color } }>{ color }</li> );
+  }
+
+  _colorFilter(color) {
+    return new RegExp(`^${this.state.filter.join("|")}$`).test(color)
   }
 
   render() {

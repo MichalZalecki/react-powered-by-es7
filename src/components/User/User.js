@@ -41,7 +41,7 @@ class User extends React.Component {
   }
 
   getLangs() {
-    return this.state.user.langs.join(", ");
+    return this.state.user.langs.map(lang => `${lang.name} - ${lang.count}`).join(", ");
   }
 
   render() {

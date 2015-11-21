@@ -6,7 +6,7 @@ class RestProperties extends React.Component {
   getListItems() {
     const { style, ...data } = this.props;
     return Object.keys(data).map(key =>
-      <li key={key}>
+      <li key={ key }>
         { changeCase.titleCase(key) }: <strong>{ data[key] }</strong>
       </li>
     );

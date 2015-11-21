@@ -1,12 +1,8 @@
 import React    from "react";
-import template from "./ClassProperties.jsx";
+import template from "./Time.jsx";
 import moment   from "moment"
 
-class ClassProperties extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class Time extends React.Component {
   DATE_FORMAT = "MMMM Do YYYY, h:mm:ss a";
 
   getDate() {
@@ -18,4 +14,4 @@ class ClassProperties extends React.Component {
   }
 }
 
-export default ClassProperties;
+export default Time;

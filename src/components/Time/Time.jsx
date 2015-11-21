@@ -1,9 +1,9 @@
-import "./ClassProperties.css";
+import "./Time.css";
 import React from "react";
 
 function template() {
   return (
-    <div className="class-properties">
+    <div className="time">
       <h1>{ this.getDate() }</h1>
     </div>
   );
