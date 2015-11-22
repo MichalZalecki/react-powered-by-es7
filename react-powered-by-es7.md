@@ -6,7 +6,7 @@ ECMAScript 7 is the next stage in evolution of ECMA-262 standard (aka **JavaScri
 
 You should not, basically you cannot, use ES7 and count on native support but this does not mean you have to wait for it. In woumedia we write ES7 code thanks to Babel which provides us pretty decent *support* for ES7 right now doing ES7 to ES5 transpilation.
 
-Here are some nice ES7 features you can use along with React to level up your codebase.
+Here are some nice ES7 features you can use along with React to level up your codebase. Full code examples are available at [github](https://github.com/MichalZalecki/react-powered-by-es7).
 
 ## Class Properties
 
