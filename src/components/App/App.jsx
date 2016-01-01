@@ -1,11 +1,12 @@
 import "./App.css";
 import React from "react";
 import Time  from "app/components/Time";
-import DoExpression     from "app/components/DoExpression";
-import RestProperties   from "app/components/RestProperties";
-import SpreadProperties from "app/components/SpreadProperties";
-import User             from "app/components/User";
-import Decorators       from "app/components/Decorators";
+import DoExpression       from "app/components/DoExpression";
+import RestProperties     from "app/components/RestProperties";
+import SpreadProperties   from "app/components/SpreadProperties";
+import User               from "app/components/User";
+import Decorators         from "app/components/Decorators";
+import FunctionBindSyntax from "app/components/FunctionBindSyntax";
 
 export default function () {
   return (
@@ -26,6 +27,7 @@ export default function () {
       <SpreadProperties />
       <User username="MichalZalecki" />
       <Decorators />
+      <FunctionBindSyntax />
     </div>
   );
 };
